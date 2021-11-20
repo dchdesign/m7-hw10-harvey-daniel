@@ -10,7 +10,7 @@ var textarea = document.querySelector('textarea')
 
  
   var nameSpan = localStorage.getItem('span')
-  var textarea = localStorage.getItem('textarea')
+  var textarea = localStorage.getItem('notes')
 
 
 formEl.onsubmit = function(e) {
@@ -21,11 +21,11 @@ formEl.onsubmit = function(e) {
   // save textarea's content to localstorage
   // YOUR CODE HERE
 
-  var nameSpan = nameSpan.value
+  var span = span.value
   var textarea = textarea.value
   console.log ({span, textarea})
-  localStorage.setItem('span' nameSpan)
-  localStorage.setItem('textarea' textarea)
+  localStorage.setItem('span')
+  localStorage.setItem('notes')
 
   // triggers thumbs up animation
   this.elements.save.classList.add('emoji')
