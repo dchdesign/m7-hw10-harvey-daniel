@@ -12,6 +12,7 @@ formEl.onsubmit = function(e) {
   // prevents form submission
   e.preventDefault()
   // save name element's content to cookies
+  var nameSpan = 
   // save textarea's content to localstorage
   // YOUR CODE HERE
 
