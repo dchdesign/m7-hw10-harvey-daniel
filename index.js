@@ -8,9 +8,9 @@ var textarea = document.querySelector('textarea')
 // Then apply them to elements on the page
 // YOUR CODE HERE
 
-var nameSpan = nameSpan.value
+var nameSpan = span.value
 var textarea = textarea.value
-  console.log ({nameSpan, textarea})
+  console.log ({span, textarea})
 
 
 formEl.onsubmit = function(e) {
@@ -28,6 +28,7 @@ formEl.onsubmit = function(e) {
 
 clear.onclick = function() {
   // Clear textarea's value
+
   // Clear localstorage's content
   // YOUR CODE HERE
 
