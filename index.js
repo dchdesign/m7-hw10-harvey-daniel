@@ -8,19 +8,24 @@ var textarea = document.querySelector('textarea')
 // Then apply them to elements on the page
 // YOUR CODE HERE
 
-var nameSpan = span.value
-var textarea = textarea.value
-  console.log ({span, textarea})
+ 
+  var nameSpan = localStorage.getItem('span')
+  var textarea = localStorage.getItem('textarea')
+
+
 
 
 formEl.onsubmit = function(e) {
   // prevents form submission
   e.preventDefault()
+
   // save name element's content to cookies
-  var nameSpan = localStorage.getItem('name')
   // save textarea's content to localstorage
-  var formEl= localStorage.getItem('notes')
   // YOUR CODE HERE
+
+  var nameSpan = span.value
+  var textarea = textarea.value
+  console.log ({span, textarea})
 
   // triggers thumbs up animation
   this.elements.save.classList.add('emoji')
