@@ -23,7 +23,7 @@ formEl.onsubmit = function(e) {
   // save textarea's content to localstorage
   // YOUR CODE HERE
 
-  var nameSpan = span.value
+  var nameSpan = nameSpan.value
   var textarea = textarea.value
   console.log ({span, textarea})
 
