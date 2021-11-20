@@ -13,8 +13,6 @@ var textarea = document.querySelector('textarea')
   var textarea = localStorage.getItem('textarea')
 
 
-
-
 formEl.onsubmit = function(e) {
   // prevents form submission
   e.preventDefault()
@@ -36,6 +34,9 @@ clear.onclick = function() {
 
   // Clear localstorage's content
   // YOUR CODE HERE
+
+  var clear = textarea.value
+  var clear = localStorage.value
 
   // triggers thumbs up animation
   this.classList.add('emoji')
