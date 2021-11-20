@@ -24,6 +24,8 @@ formEl.onsubmit = function(e) {
   var nameSpan = nameSpan.value
   var textarea = textarea.value
   console.log ({span, textarea})
+  localStorage.setItem('span' nameSpan)
+  localStorage.setItem('textarea' textarea)
 
   // triggers thumbs up animation
   this.elements.save.classList.add('emoji')
