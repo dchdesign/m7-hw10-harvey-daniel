@@ -8,11 +8,16 @@ var textarea = document.querySelector('textarea')
 // Then apply them to elements on the page
 // YOUR CODE HERE
 
+var nameSpan = localStorage.getItem('name')
+var formEl= localStorage.getItem('notes')
+
 formEl.onsubmit = function(e) {
   // prevents form submission
   e.preventDefault()
   // save name element's content to cookies
-  var nameSpan = 
+  var nameSpan = name.value
+  var formEl = notes.value
+  console.log({nameSpan, textarea})
   // save textarea's content to localstorage
   // YOUR CODE HERE
 
