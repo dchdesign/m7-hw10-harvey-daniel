@@ -21,11 +21,13 @@ formEl.onsubmit = function(e) {
   // save textarea's content to localstorage
   // YOUR CODE HERE
 
-  var span = span
-  var textarea = textarea
+  var span = spanInput.value
+  var textarea = textareaInput.value
   console.log ({span, textarea})
-  localStorage('span')
-  localStorage('textarea')
+  localStorage.setItem('span')
+  localStorage.setItem('textarea')
+
+}
 
   // triggers thumbs up animation
   this.elements.save.classList.add('emoji')
@@ -37,8 +39,8 @@ clear.onclick = function() {
   // Clear localstorage's content
   // YOUR CODE HERE
 
-  var clear = textarea
-  var clear = localStorage
+  var clear = textareaInput.value
+  var clear = localStorage.Input.value
 
   // triggers thumbs up animation
   this.classList.add('emoji')
